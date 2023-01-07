@@ -21,7 +21,7 @@ const HomeScreen = () => {
       <View>
         <ImageBackground
           source={require("C:/Users/Owojori Akintunde/Documents/MOBILE/pharmacy-js/assets/HomeBanner.png")}
-          style={{ width: 356, height: 93, resizeMode: "" }}
+          style={{ width: 356, height: 93, resizeMode: "cover" }}
         />
       </View>
       <HomeCard />
