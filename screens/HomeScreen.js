@@ -3,6 +3,7 @@ import {
   SafeAreaView,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 import React from "react";
@@ -18,13 +19,21 @@ const HomeScreen = () => {
         OpeningTime="Opening Time: 10:00 AM"
         ClosingTime="Closing Time: 2:00 PM"
       />
-      <View>
+      <View style={{ marginTop: 5 }}>
         <ImageBackground
           source={require("C:/Users/Owojori Akintunde/Documents/MOBILE/pharmacy-js/assets/HomeBanner.png")}
           style={{ width: 356, height: 93, resizeMode: "cover" }}
         />
+        <TouchableOpacity style={{ backgroundColor: "#000000" }}>
+          <Text style={{ fontSize: 10, color: "white" }}>Open</Text>
+        </TouchableOpacity>
       </View>
-      <HomeCard />
+
+      <View style={{}}>
+        <HomeCard />
+        <HomeCard />
+      </View>
+
       <TabBar />
     </SafeAreaView>
   );
