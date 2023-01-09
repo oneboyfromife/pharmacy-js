@@ -1,10 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const HomeCard = () => {
+const HomeCard = (props) => {
   return (
     <View>
-      <Text>HomeCard</Text>
+      <View>
+        <Image source={props.image} />
+      </View>
+      <Text>{props.name}</Text>
     </View>
   );
 };
