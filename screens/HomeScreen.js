@@ -14,7 +14,6 @@ import HomeCard from "../components/HomeCard";
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>HomeScreen</Text>
       <HomeHeader
         OpeningTime="Opening Time: 10:00 AM"
         ClosingTime="Closing Time: 2:00 PM"
@@ -34,6 +33,8 @@ const HomeScreen = () => {
         <HomeCard />
       </View>
 
+      <TouchableOpacity></TouchableOpacity>
+
       <TabBar />
     </SafeAreaView>
   );
@@ -45,5 +46,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
+    justifyContent: "space-around",
   },
 });

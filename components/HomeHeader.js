@@ -3,23 +3,27 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 
 const HomeHeader = (props) => {
-	return (
-		<View>
-			<View style={{ justifyContent: "space-between", height: 38 }}>
-				<Ionicons name="menu" size={34} color="black" />
-				<View style={{ maxHeight: 36 }}>
-					<Text>{props.OpeningTime}</Text>
-					<Text>{props.ClosingTime}</Text>
-				</View>
-				<View>
-					<Image
-						style={{ width: 36, height: 34 }}
-						source={require("../assets/logo.png")}
-					/>
-				</View>
-			</View>
-		</View>
-	);
+  return (
+    <View
+      style={{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        height: 38,
+      }}
+    >
+      <Ionicons name="menu" size={34} color="black" />
+      <View style={{ maxHeight: 36 }}>
+        <Text>{props.OpeningTime}</Text>
+        <Text>{props.ClosingTime}</Text>
+      </View>
+      <View>
+        <Image
+          style={{ width: 36, height: 34 }}
+          source={require("../assets/logo.png")}
+        />
+      </View>
+    </View>
+  );
 };
 
 export default HomeHeader;
