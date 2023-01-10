@@ -14,44 +14,24 @@ import HomeCard from "../components/HomeCard";
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <Text>HomeScreen</Text>
       <HomeHeader
         OpeningTime="Opening Time: 10:00 AM"
         ClosingTime="Closing Time: 2:00 PM"
       />
-      <View style={{ paddingVertical: 10 }}>
-        <View style={{ marginTop: 5 }}>
-          <ImageBackground
-            source={require("C:/Users/Owojori Akintunde/Documents/MOBILE/pharmacy-js/assets/HomeBanner.png")}
-            style={{ width: 356, height: 93, resizeMode: "cover" }}
-          >
-            <TouchableOpacity style={{ backgroundColor: "#000000" }}>
-              <Text style={{ fontSize: 10, color: "white" }}>Open</Text>
-            </TouchableOpacity>
-          </ImageBackground>
-        </View>
+      <View style={{ marginTop: 5 }}>
+        <ImageBackground
+          source={require("../assets/HomeBanner.png")}
+          style={{ width: 356, height: 93, resizeMode: "cover" }}
+        />
+        <TouchableOpacity style={{ backgroundColor: "#000000" }}>
+          <Text style={{ fontSize: 10, color: "white" }}>Open</Text>
+        </TouchableOpacity>
+      </View>
 
-        <View style={{}}>
-          <TouchableOpacity>
-            <HomeCard />
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <HomeCard />
-          </TouchableOpacity>
-        </View>
-
-        <View>
-          <TouchableOpacity>
-            <ImageBackground>
-              <Text>Contacts</Text>
-            </ImageBackground>
-          </TouchableOpacity>
-
-          <TouchableOpacity>
-            <ImageBackground>
-              <Text>Advice</Text>
-            </ImageBackground>
-          </TouchableOpacity>
-        </View>
+      <View style={{}}>
+        <HomeCard />
+        <HomeCard />
       </View>
 
       <TabBar />
