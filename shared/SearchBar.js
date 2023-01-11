@@ -10,7 +10,7 @@ const SearchBar = (props) => {
       <Ionicons
         name="ios-search"
         size={20}
-        color="black"
+        color="gray"
         style={styles.searchIcon}
       />
       <TextInput
@@ -28,8 +28,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "#f5f5f5",
-    padding: 10,
-    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: "black",
+    paddingHorizontal: 15,
+    paddingVertical: 5,
+    borderRadius: 15,
+    marginVertical: 15,
   },
   searchIcon: {
     width: 20,
