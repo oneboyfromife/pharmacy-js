@@ -11,7 +11,7 @@ import LoginScreen from "./screens/LoginScreen";
 const Stack = createNativeStackNavigator();
 
 function App() {
-	return <HomeScreen />;
+	return <LoginScreen />;
 }
 
 export default App;
