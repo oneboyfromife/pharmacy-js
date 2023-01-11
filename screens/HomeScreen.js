@@ -29,8 +29,11 @@ const HomeScreen = () => {
       </View>
 
       <View style={{}}>
-        <HomeCard />
-        <HomeCard />
+        <View>
+          <ImageBackground source={require("../assets")}>
+            <Text>Pharmacy Drugs</Text>
+          </ImageBackground>
+        </View>
       </View>
 
       <TouchableOpacity></TouchableOpacity>
