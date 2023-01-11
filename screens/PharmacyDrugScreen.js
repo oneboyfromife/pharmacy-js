@@ -8,7 +8,7 @@ import Category from "../components/Category";
 const PharmacyDrugScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ backgroundColor: "white", marginBottom: 15 }}>
+      <View style={{ backgroundColor: "white", marginVertical: 30 }}>
         <View style={{ marginHorizontal: 10 }}>
           <Header title="Pharmacy Drugs" />
         </View>
@@ -21,10 +21,10 @@ const PharmacyDrugScreen = () => {
       <View style={{ backgroundColor: "white" }}>
         <Text style={{ color: "#1E8D48", fontSize: 20 }}>Category</Text>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <Category image="../assets/category-1.png" name="Allergy" />
-          <Category image="../assets/category-2.png" name="Intergration" />
-          <Category image="../assets/category-3.png" name="Skin care" />
-          <Category image="../assets/category-1.png" name="Pedicure" />
+          <Category name="Allergy" />
+          <Category name="Intergration" />
+          <Category name="Skin care" />
+          <Category name="Pedicure" />
         </ScrollView>
       </View>
 
@@ -33,16 +33,16 @@ const PharmacyDrugScreen = () => {
           You may also like
         </Text>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <Category image="../assets/Inhaler.png" name="Inhalants" />
-          <Category image="../assets/Nose.png" name="Nose" />
-          <Category image="../assets/Eye.png" name="Eyes" />
-          <Category image="../assets/category-1.png" name="Others" />
+          <Category name="Inhalants" />
+          <Category name="Nose" />
+          <Category name="Eyes" />
+          <Category name="Others" />
         </ScrollView>
       </View>
 
-      <View style={{ flexDirection: "row", alignSelf: "flex-end" }}>
+      {/* <View style={{ flexDirection: "row", alignSelf: "flex-end" }}>
         <TabBar />
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 };
@@ -54,5 +54,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: "#D1D1D1",
+    paddingVertical: 20,
   },
 });
