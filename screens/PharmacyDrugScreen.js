@@ -18,7 +18,7 @@ const PharmacyDrugScreen = () => {
       </View>
 
       {/* Category */}
-      <View style={{ backgroundColor: "white" }}>
+      <View style={{ backgroundColor: "white", paddingVertical: 20 }}>
         <Text style={{ color: "#1E8D48", fontSize: 20 }}>Category</Text>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <Category name="Allergy" />
@@ -28,7 +28,7 @@ const PharmacyDrugScreen = () => {
         </ScrollView>
       </View>
 
-      <View style={{ backgroundColor: "white" }}>
+      <View style={{ backgroundColor: "white", paddingVertical: 20 }}>
         <Text style={{ color: "#1E8D48", fontSize: 20 }}>
           You may also like
         </Text>
