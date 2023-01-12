@@ -6,7 +6,7 @@ const Category = ({ name }) => {
 		<TouchableOpacity style={styles.container}>
 			<View style={styles.imageContainer}>
 				<Image
-					source={require("../assets/category-1.png")}
+					source={require("../../assets/category-1.png")}
 					style={styles.image}
 				/>
 			</View>
