@@ -26,14 +26,16 @@ export default NotificationCard;
 const styles = StyleSheet.create({
 	container: {
 		flexDirection: "row",
-		gap: 20,
 		paddingHorizontal: 10,
 		alignItems: "center",
 		shadowColor: "#000",
 		shadowOpacity: 0.2,
 		paddingVertical: 15,
 		marginHorizontal: 10,
-		shadowOffset: { width: -2, height: 4 },
+		shadowOffset: { width: 0, height: 4 },
+		backgroundColor: colors.white,
+		marginVertical: 10,
+		borderRadius: 5,
 	},
 	image: {
 		height: 100,

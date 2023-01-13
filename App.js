@@ -20,66 +20,66 @@ const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
 
 function App() {
-  return (
-    // <DrugsScreen />
-    <NavigationContainer>
-      <BottomTab.Navigator>
-        <BottomTab.Screen
-          name="Home"
-          component={PharmacyDrugScreen}
-          options={{
-            title: "Pharmacy Drugs",
-            tabBarLabel: "Home",
-            tabBarIcon: () => (
-              <Ionicons name="home" color={colors.primaryGreen} size={20} />
-            ),
-          }}
-        />
-        <BottomTab.Screen
-          name="Cart"
-          component={CartScreen}
-          options={{
-            title: "Cart",
-            tabBarLabel: "Cart",
-            tabBarIcon: () => (
-              <Ionicons name="cart" color={colors.primaryGreen} size={20} />
-            ),
-          }}
-        />
-        <BottomTab.Screen
-          name="Services"
-          component={ServicesScreen}
-          options={{
-            title: "Services",
-            tabBarLabel: "Services",
-            tabBarIcon: () => (
-              <MaterialIcons
-                name="miscellaneous-services"
-                size={20}
-                color={colors.primaryGreen}
-              />
-            ),
-          }}
-        />
-        <BottomTab.Screen
-          name="Notification"
-          component={NotificationScreen}
-          options={{
-            title: "Notification",
-            tabBarLabel: "Notification",
-            tabBarIcon: () => (
-              <Ionicons
-                name="notifications"
-                color={colors.primaryGreen}
-                size={20}
-              />
-            ),
-            tabBarBadge: 1,
-          }}
-        />
-      </BottomTab.Navigator>
-    </NavigationContainer>
-  );
+	return (
+		// <DrugsScreen />
+		<NavigationContainer>
+			<BottomTab.Navigator>
+				<BottomTab.Screen
+					name="Home"
+					component={PharmacyDrugScreen}
+					options={{
+						title: "Pharmacy Drugs",
+						tabBarLabel: "Home",
+						tabBarIcon: () => (
+							<Ionicons name="home" color={colors.primaryGreen} size={20} />
+						),
+					}}
+				/>
+				<BottomTab.Screen
+					name="Cart"
+					component={CartScreen}
+					options={{
+						title: "Cart",
+						tabBarLabel: "Cart",
+						tabBarIcon: () => (
+							<Ionicons name="cart" color={colors.primaryGreen} size={20} />
+						),
+					}}
+				/>
+				<BottomTab.Screen
+					name="Services"
+					component={ServicesScreen}
+					options={{
+						title: "Services",
+						tabBarLabel: "Services",
+						tabBarIcon: () => (
+							<MaterialIcons
+								name="miscellaneous-services"
+								size={20}
+								color={colors.primaryGreen}
+							/>
+						),
+					}}
+				/>
+				<BottomTab.Screen
+					name="Notification"
+					component={NotificationScreen}
+					options={{
+						title: "Notification",
+						tabBarLabel: "Notification",
+						tabBarIcon: () => (
+							<Ionicons
+								name="notifications"
+								color={colors.primaryGreen}
+								size={20}
+							/>
+						),
+						tabBarBadge: 1,
+					}}
+				/>
+			</BottomTab.Navigator>
+		</NavigationContainer>
+	);
 }
 
 export default App;
