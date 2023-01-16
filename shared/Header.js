@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 
@@ -32,5 +32,3 @@ const Header = (props) => {
 };
 
 export default Header;
-
-const styles = StyleSheet.create({});
