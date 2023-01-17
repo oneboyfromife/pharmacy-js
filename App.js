@@ -16,69 +16,71 @@ import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { colors } from "./constants/colors";
 import ProductScreen from "./screens/ProductScreen";
+import TherapyScreen from "./screens/TherapyScreen";
 const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
 
 function App() {
 	return (
 		// <ProductScreen />
-		<NavigationContainer>
-			<BottomTab.Navigator>
-				<BottomTab.Screen
-					name="Home"
-					component={PharmacyDrugScreen}
-					options={{
-						title: "Pharmacy Drugs",
-						tabBarLabel: "Home",
-						tabBarIcon: () => (
-							<Ionicons name="home" color={colors.primaryGreen} size={20} />
-						),
-					}}
-				/>
-				<BottomTab.Screen
-					name="Cart"
-					component={CartScreen}
-					options={{
-						title: "Cart",
-						tabBarLabel: "Cart",
-						tabBarIcon: () => (
-							<Ionicons name="cart" color={colors.primaryGreen} size={20} />
-						),
-					}}
-				/>
-				<BottomTab.Screen
-					name="Services"
-					component={ServicesScreen}
-					options={{
-						title: "Services",
-						tabBarLabel: "Services",
-						tabBarIcon: () => (
-							<MaterialIcons
-								name="miscellaneous-services"
-								size={20}
-								color={colors.primaryGreen}
-							/>
-						),
-					}}
-				/>
-				<BottomTab.Screen
-					name="Notification"
-					component={NotificationScreen}
-					options={{
-						title: "Notification",
-						tabBarLabel: "Notification",
-						tabBarIcon: () => (
-							<Ionicons
-								name="notifications"
-								color={colors.primaryGreen}
-								size={20}
-							/>
-						),
-						tabBarBadge: 1,
-					}}
-				/>
-			</BottomTab.Navigator>
-		</NavigationContainer>
+		<TherapyScreen />
+		// <NavigationContainer>
+		// 	<BottomTab.Navigator>
+		// 		<BottomTab.Screen
+		// 			name="Home"
+		// 			component={PharmacyDrugScreen}
+		// 			options={{
+		// 				title: "Pharmacy Drugs",
+		// 				tabBarLabel: "Home",
+		// 				tabBarIcon: () => (
+		// 					<Ionicons name="home" color={colors.primaryGreen} size={20} />
+		// 				),
+		// 			}}
+		// 		/>
+		// 		<BottomTab.Screen
+		// 			name="Cart"
+		// 			component={CartScreen}
+		// 			options={{
+		// 				title: "Cart",
+		// 				tabBarLabel: "Cart",
+		// 				tabBarIcon: () => (
+		// 					<Ionicons name="cart" color={colors.primaryGreen} size={20} />
+		// 				),
+		// 			}}
+		// 		/>
+		// 		<BottomTab.Screen
+		// 			name="Services"
+		// 			component={ServicesScreen}
+		// 			options={{
+		// 				title: "Services",
+		// 				tabBarLabel: "Services",
+		// 				tabBarIcon: () => (
+		// 					<MaterialIcons
+		// 						name="miscellaneous-services"
+		// 						size={20}
+		// 						color={colors.primaryGreen}
+		// 					/>
+		// 				),
+		// 			}}
+		// 		/>
+		// 		<BottomTab.Screen
+		// 			name="Notification"
+		// 			component={NotificationScreen}
+		// 			options={{
+		// 				title: "Notification",
+		// 				tabBarLabel: "Notification",
+		// 				tabBarIcon: () => (
+		// 					<Ionicons
+		// 						name="notifications"
+		// 						color={colors.primaryGreen}
+		// 						size={20}
+		// 					/>
+		// 				),
+		// 				tabBarBadge: 1,
+		// 			}}
+		// 		/>
+		// 	</BottomTab.Navigator>
+		// </NavigationContainer>
 	);
 }
 

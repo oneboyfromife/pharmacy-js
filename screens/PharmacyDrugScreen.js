@@ -2,7 +2,6 @@ import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Header from "../shared/Header";
 import SearchBar from "../shared/SearchBar";
-import TabBar from "../components/TabBar";
 import Category from "../components/category/SingleCategory";
 import { colors } from "../constants/colors";
 import ScrollbarCategory from "../components/category/ScrollbarCategory";
