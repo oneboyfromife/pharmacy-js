@@ -22,23 +22,7 @@ const PharmacyDrugScreen = () => {
 					<ScrollbarCategory title="Category" />
 					<ScrollbarCategory title="You may also like" />
 				</View>
-
-				{/* <View style={{ backgroundColor: "white", paddingVertical: 20 }}>
-					<Text style={{ color: "#1E8D48", fontSize: 20 }}>
-						You may also like
-					</Text>
-					<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-						<Category name="Inhalants" />
-						<Category name="Nose" />
-						<Category name="Eyes" />
-						<Category name="Others" />
-					</ScrollView>
-				</View> */}
 			</View>
-
-			{/* <View style={{ flexDirection: "row", alignSelf: "flex-end" }}>
-        <TabBar />
-      </View> */}
 		</SafeAreaView>
 	);
 };

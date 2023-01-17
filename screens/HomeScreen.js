@@ -14,10 +14,10 @@ import HomeCard from "../components/cards/HomeCard";
 const HomeScreen = () => {
 	return (
 		<SafeAreaView style={styles.container}>
-			<HomeHeader
+			{/* <HomeHeader
 				OpeningTime="Opening Time: 10:00 AM"
 				ClosingTime="Closing Time: 2:00 PM"
-			/>
+			/> */}
 			<View style={{ marginTop: 5 }}>
 				<ImageBackground
 					source={require("../assets/HomeBanner.png")}

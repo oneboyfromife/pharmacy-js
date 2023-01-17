@@ -15,13 +15,13 @@ import DrugsScreen from "./screens/DrugsScreen";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { colors } from "./constants/colors";
-
+import ProductScreen from "./screens/ProductScreen";
 const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
 
 function App() {
 	return (
-		// <DrugsScreen />
+		// <ProductScreen />
 		<NavigationContainer>
 			<BottomTab.Navigator>
 				<BottomTab.Screen

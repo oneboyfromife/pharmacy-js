@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 	container: {
 		backgroundColor: colors.white,
 		shadowColor: colors.black,
-		shadowOpacity: 0.3,
+		shadowOpacity: 0.1,
 		paddingVertical: 10,
 		shadowOffset: { width: -2, height: 4 },
 		marginBottom: 10,
